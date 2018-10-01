@@ -1,0 +1,45 @@
+[2018-10-01T14:24:03.427] [INFO] default -  Server is listening on 3000
+[2018-10-01T14:24:19.341] [INFO] default - *********** Getting a new request ********** /
+[2018-10-01T14:24:19.372] [INFO] default - *********** Getting a new request ********** /runtime.js
+[2018-10-01T14:24:20.120] [INFO] default - *********** Getting a new request ********** /polyfills.js
+[2018-10-01T14:24:20.120] [INFO] default - *********** Getting a new request ********** /styles.js
+[2018-10-01T14:24:20.120] [INFO] default - *********** Getting a new request ********** /scripts.js
+[2018-10-01T14:24:20.122] [INFO] default - *********** Getting a new request ********** /vendor.js
+[2018-10-01T14:24:20.123] [INFO] default - *********** Getting a new request ********** /main.js
+[2018-10-01T14:24:29.169] [INFO] default - *********** Getting a new request ********** /csvUpload
+[2018-10-01T14:24:29.174] [INFO] default - CSV File upload completed successfully without any error
+[2018-10-01T14:26:06.053] [INFO] default -  Server is listening on 3000
+[2018-10-01T14:26:09.695] [INFO] default - *********** Getting a new request ********** /
+[2018-10-01T14:26:09.713] [INFO] default - *********** Getting a new request ********** /runtime.js
+[2018-10-01T14:26:09.713] [INFO] default - *********** Getting a new request ********** /polyfills.js
+[2018-10-01T14:26:09.716] [INFO] default - *********** Getting a new request ********** /styles.js
+[2018-10-01T14:26:09.716] [INFO] default - *********** Getting a new request ********** /scripts.js
+[2018-10-01T14:26:09.717] [INFO] default - *********** Getting a new request ********** /vendor.js
+[2018-10-01T14:26:09.718] [INFO] default - *********** Getting a new request ********** /main.js
+[2018-10-01T14:26:10.265] [INFO] default - *********** Getting a new request ********** /favicon.ico
+[2018-10-01T14:26:14.874] [INFO] default - *********** Getting a new request ********** /csvUpload
+[2018-10-01T14:26:14.879] [INFO] default - CSV File upload completed successfully without any error
+[2018-10-01T14:33:10.446] [INFO] default -  Server is listening on 3000
+[2018-10-01T14:33:13.509] [INFO] default - *********** Getting a new request ********** /
+[2018-10-01T14:33:13.526] [INFO] default - *********** Getting a new request ********** /runtime.js
+[2018-10-01T14:33:13.527] [INFO] default - *********** Getting a new request ********** /polyfills.js
+[2018-10-01T14:33:13.527] [INFO] default - *********** Getting a new request ********** /styles.js
+[2018-10-01T14:33:13.528] [INFO] default - *********** Getting a new request ********** /scripts.js
+[2018-10-01T14:33:13.531] [INFO] default - *********** Getting a new request ********** /vendor.js
+[2018-10-01T14:33:13.532] [INFO] default - *********** Getting a new request ********** /main.js
+[2018-10-01T14:33:14.073] [INFO] default - *********** Getting a new request ********** /favicon.ico
+[2018-10-01T14:33:18.491] [INFO] default - *********** Getting a new request ********** /xmlUpload
+[2018-10-01T14:33:18.497] [INFO] default - XML File upload completed successfully without any error
+[2018-10-01T15:33:57.544] [INFO] default -  Server is listening on 3000
+[2018-10-01T15:34:02.178] [INFO] default - *********** Getting a new request ********** /
+[2018-10-01T15:34:02.204] [INFO] default - *********** Getting a new request ********** /runtime.js
+[2018-10-01T15:34:02.204] [INFO] default - *********** Getting a new request ********** /polyfills.js
+[2018-10-01T15:34:02.205] [INFO] default - *********** Getting a new request ********** /styles.js
+[2018-10-01T15:34:02.206] [INFO] default - *********** Getting a new request ********** /scripts.js
+[2018-10-01T15:34:02.207] [INFO] default - *********** Getting a new request ********** /vendor.js
+[2018-10-01T15:34:02.207] [INFO] default - *********** Getting a new request ********** /main.js
+[2018-10-01T15:34:02.794] [INFO] default - *********** Getting a new request ********** /favicon.ico
+[2018-10-01T15:34:11.171] [INFO] default - *********** Getting a new request ********** /xmlUpload
+[2018-10-01T15:34:11.176] [INFO] default - XML File upload completed successfully without any error
+[2018-10-01T15:34:19.704] [INFO] default - *********** Getting a new request ********** /csvUpload
+[2018-10-01T15:34:19.706] [INFO] default - CSV File upload completed successfully without any error

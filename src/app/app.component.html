@@ -1,0 +1,91 @@
+<div class="header1">
+    <h1>Welcome to {{title}}</h1>
+</div>
+
+<div class="fileChooser">
+  <label for="csvFileUpload">Choose a file (.xml or .csv only)
+    <mat-icon class="pink">
+      attach_file
+    </mat-icon>
+  </label>
+    <input type="file" #fileImportInput name="File_Upload" id="csvFileUpload" (change)="fileChangeListener($event)" class="inputFile">
+</div>
+
+<br>
+<br>
+
+<div *ngIf="_spinnerFlag">
+  <mat-spinner></mat-spinner>
+</div>
+
+<div *ngIf="_validDataSource && _spinnerFlag === false" class="dataTable">
+  <h3>Accurate Records</h3>
+  <table mat-table [dataSource]="_validDataSource" class="mat-elevation-z8"> 
+  
+    <!-- REFERENCE COLUMN -->
+    <ng-container matColumnDef="Reference">
+      <th mat-header-cell *matHeaderCellDef > Reference</th>
+      <td mat-cell *matCellDef="let element"> {{element.Reference}} </td>
+    </ng-container>
+  
+    <!-- ACCOUNT NUMBER COLUMN-->
+    <ng-container matColumnDef="AccountNumber">
+      <th mat-header-cell *matHeaderCellDef> Account Number</th>
+      <td mat-cell *matCellDef="let element"> {{element.AccountNumber}} </td>
+    </ng-container>
+  
+    <!-- DESCRIPTION COLUMN -->
+    <ng-container matColumnDef="Description">
+      <th mat-header-cell *matHeaderCellDef> Description</th>
+      <td mat-cell *matCellDef="let element"> {{element.Description}} </td>
+    </ng-container>
+  
+    <!-- START BALANCE COLUMN -->
+    <ng-container matColumnDef="Start Balance">
+      <th mat-header-cell *matHeaderCellDef> Start Balance</th>
+      <td mat-cell *matCellDef="let element"> {{element['Start Balance'] | currency: 'EUR'}} </td>
+    </ng-container>
+
+    <!-- MUTATION COLUMN -->
+    <ng-container matColumnDef="Mutation">
+      <th mat-header-cell *matHeaderCellDef>Mutation</th>
+      <td mat-cell *matCellDef="let element"> {{element.Mutation}} </td>
+    </ng-container>
+
+    <!-- END BALANCE COLUMN -->
+    <ng-container matColumnDef="End Balance">
+      <th mat-header-cell *matHeaderCellDef> End Balance</th>
+      <td mat-cell *matCellDef="let element"> {{element['End Balance'] | currency: 'EUR'}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="_columnsForValidFile; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: _columnsForValidFile;"></tr>
+  </table>
+</div>
+
+<div *ngIf="_invalidDataSource && _spinnerFlag === false" class="dataTable">
+  <h3>Failed Records</h3>
+  <table mat-table [dataSource]="_invalidDataSource" class="mat-elevation-z8"> 
+  
+    <!-- REFERENCE COLUMN -->
+    <ng-container matColumnDef="Reference">
+      <th mat-header-cell *matHeaderCellDef > Reference</th>
+      <td mat-cell *matCellDef="let element"> {{element.Reference}} </td>
+    </ng-container>
+  
+    <!-- DESCRIPTION COLUMN -->
+    <ng-container matColumnDef="Description">
+      <th mat-header-cell *matHeaderCellDef> Description</th>
+      <td mat-cell *matCellDef="let element"> {{element.Description}} </td>
+    </ng-container>
+  
+    <!-- REASON COLUMN -->
+    <ng-container matColumnDef="Reason">
+      <th mat-header-cell *matHeaderCellDef> Reason</th>
+      <td mat-cell *matCellDef="let element"> {{element.Reason}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="_columnsForInvalidFile; sticky: true"></tr>
+    <tr mat-row *matRowDef="let row; columns: _columnsForInvalidFile;"></tr>
+  </table>
+</div>
